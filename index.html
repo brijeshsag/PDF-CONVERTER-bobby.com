@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+        <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+        <link rel="stylesheet" href="/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Img To PDF</title>
+    </head>
+
+    
+
+    <body>
+        <div class="nav">
+            <span class="logo">
+            <i class="fa fa-file-pdf-o"></i> PDF CONVERTER bobby
+            </span>
+            <div>
+            <button onClick={calcPdfSize(this)} id="convertBtn" convertBtn={convertBtn}>SAVE AS PDF</button>
+            <button onClick={embedImages()} id="download">DOWNLOAD</button>
+            <button id="upload-msg" type="button" disabled="true">UPLOAD FILES</button>
+            </div>
+        </div>
+
+        <h1 class="headline">Easily convert to and from PDF in seconds.</h1>
+
+        <div class="input-page" id="input-page">
+            <div class="choose-file">          
+                <div class="add-more-files">
+                    <div class="inp-container">
+                        <input type="file" id="upload-file" onChange={encodeImageFileAsURL(this)} multiple accept="image/*"/>
+                        <h4 class="drop">
+                            DRAG & DROP OR
+                        </h4>
+                        <p >
+                            <i class="fa fa-file-image-o fa-4x img-icon"></i>
+                            
+                        </p>
+                        <label htmlFor="upload-file" id="custom-file">CHOOSE FILES</label>
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+        <div class="pdf-page" id="pdf-page">             
+            <div class="create-pdf" id="create-pdf"> 
+                    
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+
+        <div class="h1">
+            <h1>How to Convert Files to and from PDF Free</h1>
+        </div>
+
+        <div class="h2">
+            <h2>1. Select the Word, Excel, PowerPoint, PDF or other file you wish to convert.</h2>
+            <h2>2. Our free PDF creator will convert your document to PDF or from PDF in seconds.</h2>
+            <h2>3. Your new document will be ready to download immediately. After the download is complete, any remaining files uploaded will be purged from our server.</h2>
+        </div>
+
+        <div class="que">
+            <h1>Questions? We have answers.</h1>
+        </div>
+        <div class="ans">
+            <h2>
+                <pre>How do I convert to PDF?                      The Acrobat PDF converter lets you convert Microsoft 365, text, and image files to PDF,
+                                                            including DOCX, DOC, XLSX, XLS, PPTX, PPT, TXT, RTF, JPG, PNG, TIFF, and BMP formats. You 
+                                                            can also convert AI, INDD, and PSD files to PDF using any web browser. Converting to PDF
+                                                            with Adobe tools will preserve your document formatting, images, and alignment, so your
+                                                            files will look as expected on Mac or Windows on any device.
+                                                            
+                                                            You can also try Adobe Acrobat Pro for free for seven days to convert HTML to PDF, convert additional formats like GIF, edit PDFs, edit scans with OCR, merge PDFs, split PDFs, reduce file size, and convert PDFs to other file formats.
+
+What software do I need to convert files to PDF?           When you use the Acrobat online Convert to PDF tool, you don’t need any other software to convert a                                                          file to PDF. Just open our PDF converter in your preferred browser, select your file, and let                                                        Acrobat convert it online. You can use the tool once for free.
+
+Is it safe to convert files to PDF?                        Yes. Adobe is known for its commitment to security and privacy, so you can convert files to PDF with                                                       trust and confidence. What devices can I use to convert to PDF?
+                                                           You can use any device to convert a file to PDF using the Acrobat Convert to PDF online tool, including your desktop, laptop, tablet, or phone. All you need is browser software and an internet connection.</pre>
+            </h2>
+        </div>
+    </body>
+    </html>
+    
